@@ -270,7 +270,7 @@ const Services = () => {
                   />
                 </div>
                 <div className="p-8 md:w-1/2">
-                  <h3 className="text-2xl font-bold text-blue-900 mb-3">Specialized Forklifts</h3>
+                  <h3 className="text-2xl font-bold text-[#1b273a] mb-3">Specialized Forklifts</h3>
                   <p className="text-gray-600 mb-4">
                     For warehouse and tight space operations, our heavy-duty forklifts handle up to 15 tons with precision.
                   </p>
@@ -324,7 +324,7 @@ const Services = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-xl text-blue-200 max-w-3xl mx-auto mb-8"
+            className="text-xl text-yellow-100 max-w-3xl mx-auto mb-8"
           >
             Our team of certified crane operators and rigging specialists are ready to handle your most challenging loading and unloading projects with precision and safety.
           </motion.p>
