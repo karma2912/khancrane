@@ -49,7 +49,7 @@ const Services = () => {
   }, []);
   
   return (
-    <div className="min-h-screen w-full text-gray-900 bg-gray-50">
+    <div className="min-h-screen w-full text-gray-900 bg-gray-50 overflow-x-hidden">
  
       <div className="relative h-[70vh] flex flex-col justify-center items-center text-center bg-cover bg-center overflow-hidden">
         <img 
