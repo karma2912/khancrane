@@ -4,6 +4,7 @@ import crane1 from "../pages/crane1.jpg";
 import crane2 from "../pages/crane2.jpg";
 import crane3 from "../pages/crane4.jpg";
 import crane4 from "../pages/crane6.jpg";
+import { Helmet } from "react-helmet";
 import crane5 from "../pages/khanCrane1.jpg";
 import { Link } from "react-router-dom";
 
@@ -29,7 +30,13 @@ const AboutUs = () => {
 
   return (
     <div className="w-full bg-white text-[#1b273a] py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-      {/* Hero Section */}
+      <Helmet>
+        <title>About Khan Crane Service | Trusted Crane Experts</title>
+        <meta
+          name="description"
+          content="Learn about Khan Crane Service – a leading crane rental company in Mumbai with over 11 years of experience and 1000+ successful projects."
+        />
+      </Helmet>
       <motion.div 
         initial="hidden" 
         animate="visible" 
@@ -48,7 +55,6 @@ const AboutUs = () => {
         </p>
       </motion.div>
 
-      {/* Who We Are Section */}
       <div className="max-w-7xl mx-auto mb-20 md:mb-32">
         <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
           <motion.div 
@@ -92,7 +98,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
       <div className="max-w-7xl mx-auto mb-20 md:mb-32">
         <motion.div 
           variants={fadeInUp} 
@@ -144,7 +149,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Our Services Section */}
       <div className="max-w-7xl mx-auto mb-20 md:mb-32">
         <motion.div 
           variants={fadeInUp} 
@@ -205,7 +209,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* CTA Section */}
       <motion.div 
         variants={fadeInUp} 
         initial="hidden" 

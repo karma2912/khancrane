@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import kcImg from "./khanCrane2.jpg";
 import Accordion from "./Accordian";
-
+import { Helmet } from 'react-helmet';
 const Page2 = () => {
   
   const [isVisible, setIsVisible] = useState(false);
@@ -29,6 +29,10 @@ const Page2 = () => {
       ref={pageRef}
       className="w-full overflow-hidden min-h-[80vh] lg:min-h-[48rem] flex flex-col lg:flex-row justify-center items-center bg-white px-6 md:px-12 py-12 lg:py-0"
     >
+      <Helmet>
+        <title>Khan Crane Service | Home</title>
+        <meta name="description" content="Welcome to Khan Crane Service – trusted crane rental in Mumbai." />
+      </Helmet>
       <div className={`hidden lg:flex lg:w-1/2 xl:w-2/5 transition-opacity duration-1000 ${
         isVisible ? "opacity-100" : "opacity-0"
       } justify-end pr-8`}>

@@ -6,7 +6,7 @@ import containerLoading from "../pages/crane4.jpg";
 import materialUnloading from "../pages/crane6.jpg";
 import heavyEquipment from "../pages/khanCrane1.jpg";
 import industrialCrane from "../pages/crane1.jpg";
-
+import { Helmet } from "react-helmet";
 const services = [
   {
     title: "Container Loading/Unloading",
@@ -50,7 +50,13 @@ const Services = () => {
   
   return (
     <div className="min-h-screen w-full text-gray-900 bg-gray-50 overflow-x-hidden">
- 
+ <Helmet>
+        <title>Services Khan Crane Service | Trusted Crane Experts</title>
+        <meta
+          name="description"
+          content="Learn about Khan Crane Service – a leading crane rental company in Mumbai with over 11 years of experience and 1000+ successful projects."
+        />
+      </Helmet>
       <div className="relative h-[70vh] flex flex-col justify-center items-center text-center bg-cover bg-center overflow-hidden">
         <img 
           src={craneServiceHero} 

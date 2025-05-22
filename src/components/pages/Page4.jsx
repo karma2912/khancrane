@@ -5,10 +5,14 @@ import crane5 from "./crane3.jpg";
 import crane4 from "./crane4.jpg";
 import crane2 from "./khanCrane2.jpg";
 import crane3 from "./crane6.jpg";
-
+import { Helmet } from 'react-helmet';
 const Page4 = () => {
   return (
     <>
+    <Helmet>
+        <title>Khan Crane Service | Home</title>
+        <meta name="description" content="Welcome to Khan Crane Service – trusted crane rental in Mumbai." />
+      </Helmet>
       <div className="min-h-[48rem] w-full bg-gray-100 flex flex-col justify-center items-center">
         <div className="md:text-center text-start">
           <div className="relative flex flex-col justify-center ">
