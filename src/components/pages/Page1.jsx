@@ -89,6 +89,12 @@ const Page1 = () => {
               We have various types of cranes suitable for your work at the most affordable{' '}
               <br className='hidden lg:block' />
               prices in the whole market.
+               <p className="text-lg text-white max-w-3xl mx-auto mt-4">
+            Location - <span className='text-yellow-500'>All over Mumbai </span>
+          </p>
+          <p className="text-lg text-white max-w-3xl mx-auto">
+            Specially <span className='text-yellow-500'>Andheri</span >  to <span className='text-yellow-500'>Dahisar</span> 
+          </p>
             </div>
           </h1>
           <div className='pt-10 animate-fade-in opacity-0 transition-opacity duration-1000 delay-700'>
@@ -121,6 +127,7 @@ const Page1 = () => {
             We provide comprehensive crane solutions tailored to your specific loading and unloading requirements, 
             backed by industry-leading safety standards.
           </p>
+         
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
