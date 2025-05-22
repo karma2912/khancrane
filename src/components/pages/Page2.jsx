@@ -3,29 +3,10 @@ import kcImg from "./khanCrane2.jpg";
 import Accordion from "./Accordian";
 
 const Page2 = () => {
-  const [toggle1, setToggle1] = useState("hidden");
-  const [toggle2, setToggle2] = useState("hidden");
-  const [toggle3, setToggle3] = useState("hidden");
+  
   const [isVisible, setIsVisible] = useState(false);
   const pageRef = useRef(null);
 
-  const toggleButton1 = () => {
-    setToggle1((prevDisp) => (prevDisp === "hidden" ? "block" : "hidden"));
-    setToggle2("hidden");
-    setToggle3("hidden");
-  };
-
-  const toggleButton2 = () => {
-    setToggle2((prevDisp) => (prevDisp === "hidden" ? "block" : "hidden"));
-    setToggle1("hidden");
-    setToggle3("hidden");
-  };
-
-  const toggleButton3 = () => {
-    setToggle3((prevDisp) => (prevDisp === "hidden" ? "block" : "hidden"));
-    setToggle1("hidden");
-    setToggle2("hidden");
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -46,44 +27,45 @@ const Page2 = () => {
   return (
     <div
       ref={pageRef}
-      className="w-full overflow-hidden min-h-[52rem] flex flex-col md:flex-row md:justify-center items-center bg-white"
+      className="w-full overflow-hidden min-h-[80vh] lg:min-h-[48rem] flex flex-col lg:flex-row justify-center items-center bg-white px-6 md:px-12 py-12 lg:py-0"
     >
-
-      <div
-        className={`transition-opacity duration-1000 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
-      >
+      <div className={`hidden lg:flex lg:w-1/2 xl:w-2/5 transition-opacity duration-1000 ${
+        isVisible ? "opacity-100" : "opacity-0"
+      } justify-end pr-8`}>
         <img
           src={kcImg}
-          className="md:h-[40rem] h-[30rem] md:w-[30rem] max-w-full md:rounded-none rounded-xl"
+          className="h-full max-h-[40rem] w-auto object-contain"
           alt="Khan Crane"
+          style={{ maxWidth: "100%" }}
         />
       </div>
 
-      <div
-        className={`transition-transform duration-1000 ease-in-out ${
-          isVisible ? "translate-x-0" : "-translate-x-10"
-        }`}
-      >
-        <div className="relative flex flex-col md:pl-40  justify-center">
-          <div className="text-lg pt-20 pl-6">
+      <div className={`w-full lg:w-1/2 xl:w-3/5 transition-transform duration-1000 ease-in-out ${
+        isVisible ? "translate-x-0" : "lg:-translate-x-10"
+      }`}>
+        <div className="relative flex flex-col justify-center lg:pl-8 xl:pl-12">
+          <div className="text-lg pt-0 lg:pt-4">
             INTRODUCTION OF US
             <div className="pt-6 gap-5">
-              <div className="text-5xl font-bold flex gap-5">
-                <div className="w-1 bg-yellow-500"></div>HOW WE BECAME BEST
-                <br />
-                AMONG OTHERS
+              <div className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold flex gap-5">
+                <div className="w-1 bg-yellow-500"></div>
+                <div>
+                  HOW WE BECAME BEST
+                  <br />
+                  AMONG OTHERS
+                </div>
               </div>
             </div>
             <div className="text-base pt-4">
-              Relevant and Trusted in the market from 20 YEARS. More than 1000+
-              <br /> happy customers from the date we started <br />
+              Relevant and Trusted in the market from 20 YEARS. More than 1000+{' '}
+              <br className="hidden lg:block" />
+              happy customers from the date we started
             </div>
           </div>
 
-          <Accordion/>
-          
+          <div className="pt-8 w-full">
+            <Accordion />
+          </div>
         </div>
       </div>
     </div>

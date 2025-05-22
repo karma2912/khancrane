@@ -141,7 +141,7 @@ const Services = () => {
       </div>
 
 
-      <div className="bg-amber-600 text-white py-16">
+      <div className="bg-[#1b273a] text-white py-16">
         <div className="container mx-auto px-4 max-w-6xl">
           <motion.div
             initial={{ opacity: 0 }}
@@ -181,7 +181,7 @@ const Services = () => {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white">
+                <div className="w-16 h-16 bg-[#1b273a] rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white">
                   {index + 1}
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{step.title}</h3>

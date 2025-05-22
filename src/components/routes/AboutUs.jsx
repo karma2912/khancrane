@@ -9,85 +9,219 @@ import { Link } from "react-router-dom";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
 const fadeInRight = {
   hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
   return (
-    <div className="min-h-screen w-full bg-white text-gray-800 py-20 px-4 md:px-12">
-      <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">About Khan Crane</h1>
-        <p className="mt-4 text-lg text-gray-600">Your Trusted Partner in Crane Services Since 2012</p>
+    <div className="w-full bg-white text-[#1b273a] py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      {/* Hero Section */}
+      <motion.div 
+        initial="hidden" 
+        animate="visible" 
+        variants={fadeInUp} 
+        className="text-center mb-16 md:mb-24"
+      >
+        <div className="text-lg md:text-xl mb-2">ABOUT OUR COMPANY</div>
+        <div className="flex justify-center">
+          <div className="w-1 h-12 bg-yellow-500 mr-4"></div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            KHAN CRANE SERVICES
+          </h1>
+        </div>
+        <p className="mt-6 text-base md:text-lg max-w-3xl mx-auto">
+          Your Trusted Partner in Crane Services Since 2012
+        </p>
       </motion.div>
 
-      <div className="mt-16 flex flex-col md:flex-row items-center gap-12">
-        <motion.div variants={fadeInLeft} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex-1 flex justify-center items-center">
-          <img src={crane1} alt="Khan Crane" className="rounded-xl shadow-lg md:w-auto md:h-[50vh] h-[45vh]" />
-        </motion.div>
-        <motion.div variants={fadeInRight} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex-1">
-          <h2 className="text-3xl font-bold text-gray-900">Who We Are</h2>
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            With <strong>11+ years of experience</strong>, we have successfully completed <strong>1000+ projects</strong> and won <strong>2 prestigious awards</strong>.
-          </p>
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            Our fleet includes <strong>Mobile Cranes</strong>, <strong>Hydraulic Cranes</strong>, and <strong>JCBs</strong> for all your heavy lifting needs.
-          </p>
-        </motion.div>
-      </div>
-
-      <div className="mt-20 text-center">
-        <h2 className="text-4xl font-bold text-gray-900">Why Choose Us?</h2>
-      </div>
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {[
-          { title: "🚀 Experienced Team", desc: "11+ years handling complex crane operations." },
-          { title: "💰 Best Prices", desc: "Most competitive rates without compromising quality." },
-          { title: "🛠️ Wide Range of Services", desc: "From crane rentals to JCB services." },
-          { title: "⚙️ 1000+ Projects", desc: "A proven track record of excellence." },
-        ].map((item, index) => (
-          <motion.div key={index} variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-gray-100 p-6 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-semibold text-gray-900">{item.title}</h3>
-            <p className="mt-2 text-gray-700">{item.desc}</p>
+      {/* Who We Are Section */}
+      <div className="max-w-7xl mx-auto mb-20 md:mb-32">
+        <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
+          <motion.div 
+            variants={fadeInLeft} 
+            initial="hidden" 
+            whileInView="visible" 
+            viewport={{ once: true, margin: "-100px" }} 
+            className="lg:w-1/2"
+          >
+            <img 
+              src={crane1} 
+              alt="Khan Crane" 
+              className="w-full h-auto max-h-[30rem] object-cover rounded-xl shadow-lg border-4 border-yellow-500"
+            />
           </motion.div>
-        ))}
-      </div>
-
-      <div className="mt-24 text-center">
-        <h2 className="text-4xl font-bold text-gray-900">Our Services</h2>
-      </div>
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {[
-          { image: crane3, title: "🔧 Crane on Hire", desc: "Flexible crane rentals for heavy lifting." },
-          { image: crane4, title: "🏗️ Mobile Crane on Hire", desc: "Quick and efficient mobile cranes." },
-          { image: crane5, title: "💪 Hydraulic Crane on Hire", desc: "Heavy-duty lifting operations with precision." },
-        ].map((service, index) => (
-          <motion.div key={index} variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-6">
-            <img src={service.image} alt={service.title} className="rounded-xl shadow-md w-full max-w-xs" />
-            <div className="text-center md:text-left">
-              <h3 className="text-2xl font-bold text-gray-900">{service.title}</h3>
-              <p className="mt-2 text-gray-700">{service.desc}</p>
-            </div>
+          
+          <motion.div 
+            variants={fadeInRight} 
+            initial="hidden" 
+            whileInView="visible" 
+            viewport={{ once: true, margin: "-100px" }} 
+            className="lg:w-1/2"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center">
+              <div className="w-8 h-1 bg-yellow-500 mr-4"></div>
+              WHO WE ARE
+            </h2>
+            <p className="text-base md:text-lg mb-4">
+              With <span className="font-bold text-yellow-600">11+ years of experience</span>, we have successfully completed <span className="font-bold">1000+ projects</span> and won <span className="font-bold">2 prestigious awards</span> in the crane service industry.
+            </p>
+            <p className="text-base md:text-lg mb-6">
+              Our extensive fleet includes <span className="font-bold">Mobile Cranes</span>, <span className="font-bold">Hydraulic Cranes</span>, and <span className="font-bold">JCBs</span> to handle all your heavy lifting needs with precision and safety.
+            </p>
+            <Link 
+              to="/services" 
+              className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+            >
+              OUR SERVICES
+            </Link>
           </motion.div>
-        ))}
+        </div>
       </div>
 
-      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mt-24 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12">Ready to Get Started?</h2>
-        <Link className="rounded-lg bg-yellow-500 transition-colors duration-300 hover:bg-yellow-600 p-3 text-white" to='/contact'>
-          Contact Us
+      {/* Why Choose Us Section */}
+      <div className="max-w-7xl mx-auto mb-20 md:mb-32">
+        <motion.div 
+          variants={fadeInUp} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }} 
+          className="text-center mb-12 md:mb-16"
+        >
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">WHY CHOOSE US</h2>
+          <div className="w-20 h-1 bg-yellow-500 mx-auto"></div>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { 
+              icon: "🚀", 
+              title: "Experienced Team", 
+              desc: "11+ years handling complex crane operations with precision and safety." 
+            },
+            { 
+              icon: "💰", 
+              title: "Best Prices", 
+              desc: "Most competitive rates in Mumbai without compromising on quality or safety." 
+            },
+            { 
+              icon: "🛠️", 
+              title: "Wide Range", 
+              desc: "Comprehensive services from crane rentals to complete project solutions." 
+            },
+            { 
+              icon: "🏆", 
+              title: "Proven Track", 
+              desc: "Successfully completed 1000+ projects with client satisfaction." 
+            },
+          ].map((item, index) => (
+            <motion.div 
+              key={index} 
+              variants={fadeInUp} 
+              initial="hidden" 
+              whileInView="visible" 
+              viewport={{ once: true, margin: "-50px" }} 
+              className="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="text-3xl mb-4">{item.icon}</div>
+              <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+              <p className="text-gray-700">{item.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* Our Services Section */}
+      <div className="max-w-7xl mx-auto mb-20 md:mb-32">
+        <motion.div 
+          variants={fadeInUp} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }} 
+          className="text-center mb-12 md:mb-16"
+        >
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">OUR SERVICES</h2>
+          <div className="w-20 h-1 bg-yellow-500 mx-auto"></div>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            { 
+              image: crane3, 
+              title: "Crane on Hire", 
+              desc: "Flexible crane rentals for all your heavy lifting requirements." 
+            },
+            { 
+              image: crane4, 
+              title: "Mobile Crane", 
+              desc: "Quick and efficient mobile cranes for construction sites." 
+            },
+            { 
+              image: crane5, 
+              title: "Hydraulic Crane", 
+              desc: "Heavy-duty lifting operations with precision and control." 
+            },
+          ].map((service, index) => (
+            <motion.div 
+              key={index} 
+              variants={fadeInUp} 
+              initial="hidden" 
+              whileInView="visible" 
+              viewport={{ once: true, margin: "-50px" }} 
+              className="group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <div className="h-48 md:h-56 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6 bg-white">
+                <h3 className="text-xl md:text-2xl font-bold mb-2">{service.title}</h3>
+                <p className="text-gray-700 mb-4">{service.desc}</p>
+                <Link 
+                  to="/services" 
+                  className="text-yellow-600 hover:text-yellow-700 font-medium inline-flex items-center"
+                >
+                  Learn more <i className="fa-solid fa-arrow-right ml-2"></i>
+                </Link>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <motion.div 
+        variants={fadeInUp} 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true }} 
+        className="max-w-4xl mx-auto bg-[#1b273a] text-white rounded-xl p-8 md:p-12 text-center"
+      >
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">READY TO GET STARTED?</h2>
+        <p className="mb-8 max-w-2xl mx-auto">
+          Contact us today to discuss your project requirements and get a free quote from our crane service experts.
+        </p>
+        <Link 
+          to="/contact" 
+          className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300"
+        >
+          CONTACT US NOW
         </Link>
       </motion.div>
     </div>
