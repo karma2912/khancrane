@@ -42,10 +42,10 @@ const Contact = () => {
   return (
     <div>
       <Helmet>
-        <title>Contact Khan Crane Service | Trusted Crane Experts</title>
+        <title>Contact SK Crane Service | Trusted Crane Experts</title>
         <meta
           name="description"
-          content="Learn about Khan Crane Service – a leading crane rental company in Mumbai with over 11 years of experience and 1000+ successful projects."
+          content="Learn about SK Crane Service – a leading crane rental company in Mumbai with over 11 years of experience and 1000+ successful projects."
         />
       </Helmet>
       <section className="text-gray-600 body-font relative">

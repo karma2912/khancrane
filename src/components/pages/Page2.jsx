@@ -30,7 +30,7 @@ const Page2 = () => {
       className="w-full overflow-hidden min-h-[80vh] lg:min-h-[48rem] flex flex-col lg:flex-row justify-center items-center bg-white px-6 md:px-12 py-12 lg:py-0"
     >
       <Helmet>
-        <title>Khan Crane Service | Home</title>
+        <title>SK Crane Services | Home</title>
         <meta name="description" content="Welcome to Khan Crane Service – trusted crane rental in Mumbai." />
       </Helmet>
       <div className={`hidden lg:flex lg:w-1/2 xl:w-2/5 transition-opacity duration-1000 ${

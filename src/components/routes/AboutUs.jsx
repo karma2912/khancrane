@@ -47,7 +47,7 @@ const AboutUs = () => {
         <div className="flex justify-center">
           <div className="w-1 h-12 bg-yellow-500 mr-4"></div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            KHAN CRANE SERVICES
+            SK CRANE SERVICES
           </h1>
         </div>
         <p className="mt-6 text-base md:text-lg max-w-3xl mx-auto">

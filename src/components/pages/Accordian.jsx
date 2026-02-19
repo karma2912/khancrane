@@ -34,7 +34,7 @@ const Accordion = () => {
             }`}
             onClick={toggleButton1}
           >
-            <span>Why Choose Khan Cranes?</span>
+            <span>Why Choose SK Cranes?</span>
             <svg
               className={`w-4 h-4 shrink-0 transition-transform duration-300 ${
                 toggle1 ? "rotate-180" : ""
@@ -60,7 +60,7 @@ const Accordion = () => {
         >
           <div className="p-5 border border-gray-200 bg-white">
             <p className="text-gray-600">
-              Khan Cranes stands out in the industry due to our <strong>11+ years of experience</strong>, <strong>1000+ successful projects</strong>, and <strong>award-winning services</strong>. We offer the best prices in the market, ensuring cost-effective solutions without compromising on quality. Our team of experts is dedicated to providing safe, reliable, and efficient crane services across Mumbai.
+              SK Cranes stands out in the industry due to our <strong>11+ years of experience</strong>, <strong>1000+ successful projects</strong>, and <strong>award-winning services</strong>. We offer the best prices in the market, ensuring cost-effective solutions without compromising on quality. Our team of experts is dedicated to providing safe, reliable, and efficient crane services across Mumbai.
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Accordion = () => {
         >
           <div className="p-5 border border-gray-200 bg-white">
             <div className="text-gray-600">
-              At Khan Cranes, we provide a wide range of services to meet all your heavy lifting and transportation needs. Our services include:
+              At SK Cranes, we provide a wide range of services to meet all your heavy lifting and transportation needs. Our services include:
               <ul className="list-disc list-inside mt-2">
                 <li><strong>Crane on Hire</strong>: Flexible rental options for all types of cranes.</li>
                 <li><strong>Clip Service</strong>: Precision clip services for construction and industrial projects.</li>
@@ -145,7 +145,7 @@ const Accordion = () => {
         >
           <div className="p-5 border border-gray-200 bg-white rounded-b-xl">
             <p className="text-gray-600">
-              Khan Cranes is based in <strong>Mumbai, Kandivali</strong>, and we proudly serve the entire Mumbai region. Whether you're in the heart of the city or the outskirts, our team is ready to deliver top-notch crane services wherever you need us. With our extensive fleet and experienced operators, we ensure timely and efficient service across all locations.
+              SK Cranes is based in <strong>Kandivali, Mumbai</strong> and we proudly serve the entire Mumbai region. Whether you're in the heart of the city or the outskirts, our team is ready to deliver top-notch crane services wherever you need us. With our extensive fleet and experienced operators, we ensure timely and efficient service across all locations.
             </p>
           </div>
         </div>

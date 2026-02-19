@@ -10,8 +10,8 @@ const Page4 = () => {
   return (
     <>
     <Helmet>
-        <title>Khan Crane Service | Home</title>
-        <meta name="description" content="Welcome to Khan Crane Service – trusted crane rental in Mumbai." />
+        <title>SK Crane Service | Home</title>
+        <meta name="description" content="Welcome to SK Crane Service – trusted crane rental in Mumbai." />
       </Helmet>
       <div className="min-h-[48rem] w-full bg-gray-100 flex flex-col justify-center items-center">
         <div className="md:text-center text-start">

@@ -14,7 +14,7 @@ const Footer = () => {
       >
 
         <div>
-          <h2 className="text-2xl font-bold text-white">Khan Crane</h2>
+          <h2 className="text-2xl font-bold text-white">SK Crane</h2>
           <p className="mt-3 text-gray-500">
             Providing top-quality crane services 24/7 for all your heavy lifting needs.
           </p>

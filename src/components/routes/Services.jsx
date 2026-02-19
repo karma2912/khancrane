@@ -51,10 +51,10 @@ const Services = () => {
   return (
     <div className="min-h-screen w-full text-gray-900 bg-gray-50 overflow-x-hidden">
  <Helmet>
-        <title>Services Khan Crane Service | Trusted Crane Experts</title>
+        <title>Services SK Crane Service | Trusted Crane Experts</title>
         <meta
           name="description"
-          content="Learn about Khan Crane Service – a leading crane rental company in Mumbai with over 11 years of experience and 1000+ successful projects."
+          content="Learn about SK Crane Service – a leading crane rental company in Mumbai with over 11 years of experience and 1000+ successful projects."
         />
       </Helmet>
       <div className="relative h-[70vh] flex flex-col justify-center items-center text-center bg-cover bg-center overflow-hidden">

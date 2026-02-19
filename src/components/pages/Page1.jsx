@@ -65,14 +65,14 @@ const Page1 = () => {
   return (
     <>
       <Helmet>
-        <title>Khan Crane Service | Home</title>
-        <meta name="description" content="Welcome to Khan Crane Service – trusted crane rental in Mumbai." />
+        <title>SK Crane Service | Home</title>
+        <meta name="description" content="Welcome to SK Crane Service – trusted crane rental in Mumbai." />
       </Helmet>
 
       <div className='min-h-[70vh] md:min-h-[48rem] w-full text-white bg-[#1b273a] flex flex-col lg:flex-row justify-center lg:justify-end items-center overflow-hidden'>
         <div className='relative flex flex-col px-6 md:px-12 lg:pl-40 justify-center py-20 lg:py-0 w-full lg:w-auto'>
           <h1 className='text-lg animate-fade-in opacity-0 transition-opacity duration-1000'>
-            KHAN CRANE SERVICES
+            SK CRANE SERVICES
             <div className='pt-6 gap-5'>
               <div className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold flex gap-5 animate-fade-in opacity-0 transition-opacity duration-1000 delay-200'>
                 <div className='w-1 bg-yellow-500'></div>

@@ -8,8 +8,8 @@ const Page3 = () => {
   return (
     <div className="min-h-screen w-full bg-[#1b273a] text-white py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
       <Helmet>
-        <title>Khan Crane Service | Home</title>
-        <meta name="description" content="Welcome to Khan Crane Service – trusted crane rental in Mumbai." />
+        <title>SK Crane Service | Home</title>
+        <meta name="description" content="Welcome to SK Crane Service – trusted crane rental in Mumbai." />
       </Helmet>
       <div className="w-full max-w-6xl text-center mb-12 md:mb-16">
         <div className="text-lg md:text-xl mb-2">OUR SERVICES</div>
