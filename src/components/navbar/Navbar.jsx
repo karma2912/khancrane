@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3 md:py-4">
           <div className="flex items-center">
-            <img src={kcLogo} className="h-12 w-12 md:h-16 md:w-16" alt="Khan Crane Services Logo" />
+            <img src={kcLogo} className="h-16 w-16 md:h-24 md:w-24" alt="Khan Crane Services Logo" />
             <span className="ml-3 text-xl md:text-2xl font-semibold">SK CRANE SERVICES</span>
           </div>
 

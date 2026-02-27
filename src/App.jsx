@@ -13,6 +13,7 @@ import Contact from "./components/routes/Contact";
 // IMPORT YOUR CALL COMPONENT HERE
 // (Make sure the path matches wherever you saved Call.jsx)
 import Call from "./components/navbar/Call"; 
+import WhatsApp from "./components/navbar/Whatsapp";
 
 function App() {
   return (
@@ -66,7 +67,7 @@ function App() {
           }
         />
       </Routes>
-
+     <WhatsApp/>
       <Call />
       
     </>
