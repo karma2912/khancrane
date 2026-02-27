@@ -10,6 +10,10 @@ import Services from "./components/routes/Services";
 import AboutUs from "./components/routes/AboutUs";
 import Contact from "./components/routes/Contact";
 
+// IMPORT YOUR CALL COMPONENT HERE
+// (Make sure the path matches wherever you saved Call.jsx)
+import Call from "./components/navbar/Call"; 
+
 function App() {
   return (
     <>
@@ -35,7 +39,6 @@ function App() {
             <>
               <Navbar />
               <Services />
-
               <Footer />
             </>
           }
@@ -47,7 +50,6 @@ function App() {
             <>
               <Navbar />
               <AboutUs />
-
               <Footer />
             </>
           }
@@ -59,12 +61,14 @@ function App() {
             <>
               <Navbar />
               <Contact />
-
               <Footer />
             </>
           }
         />
       </Routes>
+
+      <Call />
+      
     </>
   );
 }

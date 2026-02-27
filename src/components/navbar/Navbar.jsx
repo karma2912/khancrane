@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import kcLogo from "./khanCraneLogo.webp";
+import kcLogo from "./skcranelogo.png";
 import WhatsApp from "./Whatsapp";
-import Call from "./Call";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -84,7 +83,6 @@ const Navbar = () => {
               <a href="#" className="text-gray-600 hover:text-red-600">
                 <i className="fa-brands fa-youtube text-xl"></i>
               </a>
-              <Call />
             </div>
           </div>
         )}
@@ -99,7 +97,6 @@ const Navbar = () => {
             <a href="#" className="text-gray-600 hover:text-red-600">
               <i className="fa-brands fa-youtube text-xl"></i>
             </a>
-            <Call />
           </div>
 
           <nav className="flex space-x-8">
