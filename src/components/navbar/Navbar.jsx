@@ -23,7 +23,7 @@ const Navbar = () => {
               <i className="fa-solid fa-phone-volume text-2xl mr-2"></i>
               <div>
                 <div className="text-sm">Online Appointment:</div>
-                <div className="font-medium">9821661352</div>
+                <div className="font-medium">9967519974</div>
               </div>
             </div>
             <Link 
