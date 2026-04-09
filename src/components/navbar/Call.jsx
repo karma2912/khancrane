@@ -1,7 +1,7 @@
 import React from "react";
 
 const Call = () => {
-  const phoneNumber = "9967519974";
+  const phoneNumber = "";
 
   return (
     <div className="fixed bottom-5 right-5 z-50">

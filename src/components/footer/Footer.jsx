@@ -41,15 +41,15 @@ const Footer = () => {
           <div className="mt-3 space-y-2">
             <p className="flex items-center space-x-2">
               <FaPhoneAlt className="text-gray-500" />
-              <span><a href="tel:9821661352" className="text-gray-500 hover:text-white transition">+91 9821661352</a></span>
+              <span><a href="tel:9821661352" className="text-gray-500 hover:text-white transition">+91 xx</a></span>
             </p>
             <p className="flex items-center space-x-2">
               <FaPhoneAlt className="text-gray-500" />
-              <span><a href="tel:9967519974" className="text-gray-500 hover:text-white transition">+91 9967519974</a></span>
+              <span><a href="tel:xx" className="text-gray-500 hover:text-white transition">+91 xx</a></span>
             </p>
             <p className="flex items-center space-x-2">
               <FaPhoneAlt className="text-gray-500" />
-              <span><a href="tel:8369594756" className="text-gray-500 hover:text-white transition">+91 8369594756</a></span>
+              <span><a href="tel:xx" className="text-gray-500 hover:text-white transition">+91 xx</a></span>
             </p>
             <p className="flex items-center space-x-2">
               <FaEnvelope className="text-gray-500" />
